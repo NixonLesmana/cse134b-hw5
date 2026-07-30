@@ -8,7 +8,7 @@
     <title>Nixon FM | Home</title>
     <link rel="author" href="about.html">
     <link rel="stylesheet" href="styles/starboy.css">
-    <script src="scripts/starboy.js" defer></script>
+    <script src="js/theme-picker.js" type="module"></script>
 </head>
 
 <body>
@@ -40,10 +40,26 @@
                 You can browse my work across <em>robotics</em>, <em>AI and automation</em>,
                 coursework, and professional experience.
             </p>
-            <button id="stage-light-toggle" type="button" aria-pressed="false">
-                Stage Lights
-            </button>
-            <hello-world></hello-world>
+            <form class="theme-picker" data-theme-picker hidden>
+                <fieldset>
+                    <legend>Theme</legend>
+
+                    <label>
+                        <input type="radio" name="theme" value="light">
+                        Light
+                    </label>
+
+                    <label>
+                        <input type="radio" name="theme" value="dark">
+                        Dark
+                    </label>
+
+                    <label>
+                        <input type="radio" name="theme" value="system" checked>
+                        System
+                    </label>
+                </fieldset>
+            </form>
         </section>
 
         <section id="featured">
