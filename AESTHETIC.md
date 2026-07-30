@@ -1,0 +1,10 @@
+My selected aesthetic is Starboy: https://aesthetics.fandom.com/wiki/Stargirl 
+(The Aesthetic Visual Index only has Stargirl, so I took inspiration from The Weeknd's Starboy album cover and visuals)
+
+For this extra credit page, I applied the Starboy aesthetic to my website's homepage, Nixon FM by using a dark, cinematic, music-video-inspired style. I used a deep black background, red neon glow, blue accent lighting, thin geometric typography, and a faint grain texture to make the page feel like a moody album visual rather than a standard portfolio homepage. The red cross, vertical navigation, and large negative space are meant to reference the visual language of The Weeknd's Starboy era.
+
+My JavaScript enhancement is a small Stage Lights toggle. It changes the page’s lighting effect by updating the page through the DOM, and it remembers the visitor’s preference with `localStorage`. The page still works without JavaScript because the main content, links, and project sections are all normal HTML.
+
+One usability choice I made was removing horizontal scrolling on narrow screens. Initially, I planned on using a horizontal scrolling for the Featured Tracks. The featured tracks can feel more cinematic on a wide display, but at phone width the page stacks the content vertically so it stays readable around 375 pixels wide. I also kept visible focus styles so keyboard users can still see where they are on the page.
+
+McLuhan’s idea that “the medium is the message” fits this site because Nixon FM is not just listing my projects. The way the site presents them is part of the meaning. By organizing my portfolio like a music library and styling the homepage like a Starboy-inspired visual experience, the website communicates something about how I think: technical work can still have rhythm, mood, personality, and taste. The code, layout, and interaction become part of the message, not just decoration around it.

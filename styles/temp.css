@@ -1,0 +1,47 @@
+button {
+    width: fit-content;
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    border: 1px solid var(--red);
+    border-radius: 0;
+    background: transparent;
+    color: var(--ink);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 18px rgba(255, 35, 56, 0.22);
+}
+
+button:hover {
+    background: rgba(255, 35, 56, 0.12);
+    text-shadow: var(--red-glow);
+}
+
+#stage-light-toggle {
+    margin-top: 2.5rem;
+}
+
+body.stage-lights-on {
+    background:
+        radial-gradient(circle at 70% 20%, rgba(24, 168, 255, 0.24), transparent 20rem),
+        radial-gradient(circle at 24% 72%, rgba(255, 35, 56, 0.28), transparent 24rem),
+        radial-gradient(circle at 50% 45%, rgba(255, 255, 255, 0.08), transparent 18rem),
+        var(--bg);
+}
+
+body.stage-lights-on header::after {
+    opacity: 1;
+    filter:
+        drop-shadow(0 0 18px rgba(255, 35, 56, 0.95)) drop-shadow(0 0 42px rgba(255, 35, 56, 0.7));
+}
+
+body.stage-lights-on h1,
+body.stage-lights-on #intro h2 {
+    text-shadow:
+        0 0 12px rgba(255, 255, 255, 0.85),
+        0 0 28px rgba(255, 35, 56, 0.85),
+        0 0 58px rgba(24, 168, 255, 0.35);
+}
