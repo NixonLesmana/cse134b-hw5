@@ -9,6 +9,7 @@
     <link rel="author" href="about.html">
     <link rel="stylesheet" href="styles/starboy.css">
     <script src="js/theme-picker.js" type="module"></script>
+    <script src="js/github-activity.js" type="module"></script>
 </head>
 
 <body>
@@ -100,6 +101,18 @@
             </project-track>
         </section>
 
+        <section id="live-activity">
+            <h2>Live Activity</h2>
+
+            <github-activity username="NixonLesmana" count="3">
+                <p>
+                    GitHub activity is unavailable right now. Visit
+                    <a href="https://github.com/NixonLesmana">my GitHub profile</a>
+                    to see recent work.
+                </p>
+            </github-activity>
+        </section>
+
         <section id="library">
             <h2>How to Listen</h2>
             <p>
@@ -122,6 +135,16 @@
             <a href="https://github.com/NixonLesmana">GitHub</a>
         </p>
     </footer>
+
+    <template id="github-activity-template">
+        <article class="github-activity-card">
+            <h3 data-activity-heading>GitHub Activity</h3>
+            <p data-activity-status></p>
+            <ul data-activity-list></ul>
+            <p data-activity-source></p>
+            <button type="button" data-activity-retry hidden>Retry</button>
+        </article>
+    </template>
 </body>
 
 </html>
