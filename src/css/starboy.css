@@ -225,7 +225,7 @@ nav a[aria-current="page"] {
 
 #profile picture {
     display: block;
-    max-width: 28rem;
+    max-width: 20rem;
 }
 
 #profile img {
