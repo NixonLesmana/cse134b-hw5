@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "head.njk" %}
+</head>
+
+<body>
+    {% include "header.njk" %}
+
+    <main id="main-content">
+        {{ content | safe }}
+    </main>
+
+    {% include "footer.njk" %}
+
+    <template id="github-activity-template">
+        <article class="github-activity-card">
+            <h3 data-activity-heading>GitHub Activity</h3>
+            <p data-activity-status></p>
+            <ul data-activity-list></ul>
+            <p data-activity-source></p>
+            <button type="button" data-activity-retry hidden>Retry</button>
+        </article>
+    </template>
+</body>
+
+</html>

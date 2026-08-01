@@ -1,0 +1,70 @@
+---
+layout: layouts/base.njk
+title: Contact
+description: Contact information for Nixon FM.
+permalink: /contact/
+---
+
+<section id="contact-intro">
+    <h2>Contact</h2>
+
+    <p>
+        If you want to reach out about internships, projects, research, or collaboration,
+        these are the best places to find me.
+    </p>
+</section>
+
+<section id="contact-links">
+    <h2>Links</h2>
+
+    <ul>
+        <li><strong>Email:</strong> <a href="mailto:nlesmana@ucsd.edu">nlesmana@ucsd.edu</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/NixonLesmana">github.com/NixonLesmana</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nixon-lesmana/">linkedin.com/in/nixon-lesmana</a></li>
+    </ul>
+</section>
+
+<section id="contact-form">
+    <h2>Send a Message</h2>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Contact Form</legend>
+
+            <p>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" required minlength="2" maxlength="80" autocomplete="name">
+            </p>
+
+            <p>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required autocomplete="email">
+            </p>
+
+            <p>
+                <label for="reason">Reason for reaching out</label><br>
+                <input type="text" id="reason" name="reason" required minlength="4" maxlength="120">
+            </p>
+
+            <p>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="6" cols="40" required minlength="20" maxlength="1200"></textarea>
+            </p>
+
+            <button type="submit">Send Message</button>
+        </fieldset>
+    </form>
+
+    <p>
+        This form uses built-in browser validation. It is included as a portfolio contact mockup until I connect a real form endpoint.
+    </p>
+</section>
+
+<section id="availability">
+    <h2>Availability</h2>
+
+    <p>
+        I am currently interested in software engineering, AI tooling, robotics, and
+        full-stack development opportunities.
+    </p>
+</section>

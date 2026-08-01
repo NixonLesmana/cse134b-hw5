@@ -1,0 +1,39 @@
+---
+layout: layouts/base.njk
+title: Projects
+description: Project library for Nixon FM.
+permalink: /projects/
+---
+
+<section id="project-library">
+    <h2>Project Library</h2>
+
+    <p>
+        This page organizes my technical work into tracks. Each generated project page uses the same
+        case-study template and gets its content from one shared data file.
+    </p>
+</section>
+
+<section id="playlists">
+    <h2>Project Tracks</h2>
+
+    {% for project in projects %}
+        <project-track>
+            <article>
+                <p class="eyebrow">{{ project.category }}</p>
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.summary }}</p>
+                <a href="/projects/{{ project.slug }}/">Read case study</a>
+            </article>
+        </project-track>
+    {% endfor %}
+</section>
+
+<section id="project-format">
+    <h2>Track Notes</h2>
+
+    <p>
+        Each generated project page follows a consistent format: problem, contribution, tools,
+        constraints, status, and lessons learned.
+    </p>
+</section>

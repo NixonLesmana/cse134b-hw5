@@ -1,0 +1,52 @@
+---
+layout: layouts/base.njk
+pagination:
+    data: projects
+    size: 1
+    alias: project
+permalink: "/projects/{{ project.slug }}/"
+title: "{{ project.title }}"
+description: "{{ project.summary }}"
+---
+
+<article class="project-detail">
+    <p class="eyebrow">{{ project.category }}</p>
+    <h2>{{ project.title }}</h2>
+    <p>{{ project.summary }}</p>
+
+    <section>
+        <h3>Problem</h3>
+        <p>{{ project.problem }}</p>
+    </section>
+
+    <section>
+        <h3>Contribution</h3>
+        <p>{{ project.contribution }}</p>
+    </section>
+
+    <section>
+        <h3>Tools</h3>
+        <p>{{ project.tools }}</p>
+    </section>
+
+    <section>
+        <h3>Constraints</h3>
+        <p>{{ project.constraints }}</p>
+    </section>
+
+    <section>
+        <h3>Status</h3>
+        <p>{{ project.status }}</p>
+    </section>
+
+    <section>
+        <h3>What I Learned</h3>
+        <p>{{ project.learned }}</p>
+    </section>
+
+    {% if project.url %}
+        <p><a href="{{ project.url }}">Visit project</a></p>
+    {% endif %}
+
+    <p><a href="/projects/">Back to project library</a></p>
+</article>

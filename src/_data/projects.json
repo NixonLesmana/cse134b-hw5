@@ -1,0 +1,51 @@
+[
+    {
+        "title": "TritonDroids MiniAloha Robot",
+        "slug": "tritondroids-minialoha-robot",
+        "category": "Robotics",
+        "summary": "A robotics build focused on setting up the Raspberry Pi, configuring the base robot, and getting the motors working reliably.",
+        "problem": "MiniAloha is a small robot project under TritonDroids. The goal is to get the robot's hardware and software working together so it can move reliably and support future features like SLAM and robot arms.",
+        "contribution": "I set up the Raspberry Pi, helped configure the robot, and got the motors working. At this stage, the base robot is able to run, while SLAM and the robot arms are being handled by another team member.",
+        "tools": "Raspberry Pi, motor setup, robotics hardware, software control, debugging, testing, team communication, and documentation.",
+        "constraints": "Debugging took patience because issues could come from the Pi setup, motor wiring, configuration, software, or the physical robot itself.",
+        "status": "The base robot is working. Remaining work includes SLAM and the robot arms, which are part of the larger team build.",
+        "learned": "Robotics debugging is different from normal software debugging because the problem is not always in the code. I had to check the setup, hardware, and software together before deciding what was wrong."
+    },
+    {
+        "title": "Career Copilot",
+        "slug": "career-copilot",
+        "category": "AI & Automation",
+        "summary": "A full-stack AI application that helps students compare resumes with job postings and generate grounded application materials.",
+        "problem": "Students and new grads often have to rewrite their resumes for different jobs, but a lot of resume advice is either too generic or pushes people toward exaggerating their experience.",
+        "contribution": "I built Career Copilot as a full-stack web app. Users can upload a resume, save a job posting, compare the two, and generate resume bullets or cover letters that stay based on their actual experience.",
+        "tools": "Next.js, React, TypeScript, Prisma, Supabase Postgres, Clerk, Google Gemini, AI SDK, Tailwind CSS, and Vercel.",
+        "constraints": "The AI output had to stay useful without making up qualifications. I wanted the app to improve how users frame their experience, not invent experience they do not have.",
+        "status": "The app is deployed and has a working dashboard, resume upload flow, job management, match analysis, resume rewrite support, and cover letter generation.",
+        "learned": "This project taught me how much structure matters in AI products. I had to think about database models, authentication, saved user data, prompts, and the steps a user would actually go through while applying for a job.",
+        "url": "https://career-copilot-main.vercel.app"
+    },
+    {
+        "title": "COGS 108 Rental Price Trends",
+        "slug": "cogs-108-rental-price-trends",
+        "category": "Coursework",
+        "summary": "A data analysis and visualization project studying U.S. rental price trends and forecasting patterns.",
+        "problem": "Rental prices in the United States have changed a lot over the past decade. Our project looked at how rents changed over time and whether past rental data could help forecast future rental prices.",
+        "contribution": "My role was analysis and visualization. I helped explore the rental data, create plots, compare trends across regions, and explain what the results showed.",
+        "tools": "Python, Jupyter Notebook, pandas, NumPy, matplotlib, Zillow rental datasets, time-series analysis, and forecasting methods.",
+        "constraints": "The data had missing values and did not cover every city equally. Some datasets also ended before the later COVID-era rent changes, so we had to be careful about what conclusions we could make.",
+        "status": "Completed as a group final project for COGS 108.",
+        "learned": "This project helped me get better at working with real datasets. The data was not perfectly clean, and the national trend did not explain every city or metro area. I learned that visualizations are useful because they can show patterns that are easy to miss in a table."
+    },
+    {
+        "title": "CSE 29 Web Chat Server",
+        "slug": "cse-29-web-chat-server",
+        "category": "Coursework",
+        "summary": "A lower-level web chat server project built with C sockets, HTTP request handling, and WebSocket communication.",
+        "problem": "This project was about building a small web-based chat server that could let multiple users send and receive messages in real time.",
+        "contribution": "I worked with C socket programming to handle server logic, HTTP requests, and WebSocket communication between clients and the server.",
+        "tools": "C, HTTP, WebSockets, socket programming, and command-line testing.",
+        "constraints": "Since the server was written in C, I had to be careful with lower-level details like connections, buffers, request handling, and how data moved between the client and server.",
+        "status": "Completed as a CSE 29 coursework project.",
+        "learned": "This project helped me understand what happens underneath higher-level web frameworks. It made HTTP and real-time communication feel less abstract because I had to work closer to the server logic myself."
+    }
+]

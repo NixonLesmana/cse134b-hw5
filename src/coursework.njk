@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+title: Coursework
+description: Coursework projects for Nixon FM.
+permalink: /coursework/
+---
+
+<section id="coursework-playlist">
+    <h2>Coursework Playlist</h2>
+
+    <p>
+        This page is for class projects where I practiced data analysis, programming,
+        research, and technical communication.
+    </p>
+</section>
+
+<section id="coursework-tracks">
+    <h2>Track List</h2>
+
+    {% for project in projects %}
+        {% if project.category == "Coursework" %}
+            <project-track>
+                <article>
+                    <h3>{{ project.title }}</h3>
+                    <p>{{ project.summary }}</p>
+                    <a href="/projects/{{ project.slug }}/">Read case study</a>
+                </article>
+            </project-track>
+        {% endif %}
+    {% endfor %}
+</section>
+
+<section id="coursework-notes">
+    <h2>Playlist Notes</h2>
+
+    <p>
+        I included these projects because they show two different sides of my coursework:
+        data analysis in COGS 108 and lower-level server programming in CSE 29.
+    </p>
+
+    <p>
+        <a href="/projects/">Back to project library</a>
+    </p>
+</section>

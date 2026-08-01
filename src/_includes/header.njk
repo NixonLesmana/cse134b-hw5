@@ -1,0 +1,38 @@
+<header>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <h1>{{ site.title }}</h1>
+    <p><strong>{{ site.tagline }}</strong></p>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            {% for item in site.nav %}
+                {% set isCurrent = page.url == item.url or (item.url != "/" and page.url | startsWith(item.url)) %}
+                <li>
+                    <a href="{{ item.url }}"{% if isCurrent %} aria-current="page"{% endif %}>{{ item.label }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+    <form class="theme-picker" data-theme-picker hidden aria-label="Theme picker">
+        <fieldset>
+            <legend>Theme</legend>
+
+            <label>
+                <input type="radio" name="theme" value="light">
+                Light
+            </label>
+
+            <label>
+                <input type="radio" name="theme" value="dark">
+                Dark
+            </label>
+
+            <label>
+                <input type="radio" name="theme" value="system" checked>
+                System
+            </label>
+        </fieldset>
+    </form>
+</header>

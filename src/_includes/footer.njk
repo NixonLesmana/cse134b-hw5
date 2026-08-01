@@ -1,0 +1,8 @@
+<footer>
+    <p>
+        <span>Built by {{ site.author }} &copy; {{ site.currentYear }}</span><br>
+        {% for social in site.socials %}
+            <a href="{{ social.url }}">{{ social.label }}</a>{% if not loop.last %} | {% endif %}
+        {% endfor %}
+    </p>
+</footer>

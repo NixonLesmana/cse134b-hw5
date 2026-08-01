@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+title: AI & Automation
+description: AI and automation projects for Nixon FM.
+permalink: /ai-automation/
+---
+
+<section id="ai-automation-playlist">
+    <h2>AI &amp; Automation Playlist</h2>
+
+    <p>
+        This page is for projects where I use AI or automation to solve a specific problem.
+    </p>
+</section>
+
+<section id="ai-automation-tracks">
+    <h2>Track List</h2>
+
+    {% for project in projects %}
+        {% if project.category == "AI & Automation" %}
+            <project-track>
+                <article>
+                    <h3>{{ project.title }}</h3>
+                    <p>{{ project.summary }}</p>
+                    <a href="/projects/{{ project.slug }}/">Read case study</a>
+                </article>
+            </project-track>
+        {% endif %}
+    {% endfor %}
+</section>
+
+<section id="ai-automation-notes">
+    <h2>Playlist Notes</h2>
+
+    <p>
+        I am interested in AI tools that help people do real work better. Career Copilot
+        fits that because it turns a messy job application process into a more organized workflow.
+    </p>
+
+    <p>
+        <a href="/projects/">Back to project library</a>
+    </p>
+</section>

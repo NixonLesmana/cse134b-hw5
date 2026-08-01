@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+title: Robotics
+description: Robotics projects for Nixon FM.
+permalink: /robotics/
+---
+
+<section id="robotics-playlist">
+    <h2>Robotics Playlist</h2>
+
+    <p>
+        This page is for robotics projects, especially work related to TritonDroids.
+    </p>
+</section>
+
+<section id="robotics-tracks">
+    <h2>Track List</h2>
+
+    {% for project in projects %}
+        {% if project.category == "Robotics" %}
+            <project-track>
+                <article>
+                    <h3>{{ project.title }}</h3>
+                    <p>{{ project.summary }}</p>
+                    <a href="/projects/{{ project.slug }}/">Read case study</a>
+                </article>
+            </project-track>
+        {% endif %}
+    {% endfor %}
+</section>
+
+<section id="robotics-notes">
+    <h2>Playlist Notes</h2>
+
+    <p>
+        I want to keep building robotics experience because it forces me to think about the
+        whole system, not just one file or one function.
+    </p>
+
+    <p>
+        <a href="/projects/">Back to project library</a>
+    </p>
+</section>
