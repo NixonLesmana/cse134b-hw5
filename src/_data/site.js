@@ -10,7 +10,8 @@ export default {
     { label: "Projects", url: "/projects/" },
     { label: "Experience", url: "/experience/" },
     { label: "Contact", url: "/contact/" },
-    { label: "Experiments", url: "/experiments/" }
+    { label: "Experiments", url: "/experiments/" },
+    { label: "Search", url: "/search/" }
   ],
   socials: [
     { label: "LinkedIn", url: "https://www.linkedin.com/in/nixon-lesmana/" },

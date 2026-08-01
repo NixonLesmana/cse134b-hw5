@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: Search
+description: Search Nixon FM.
+permalink: /search/
+---
+
+<section id="site-search">
+    <h2>Search</h2>
+
+    <form role="search" aria-label="Site search">
+        <p>
+            <label for="search-input">Search Nixon FM</label><br>
+            <input id="search-input" type="search" placeholder="Search projects, experience, or coursework">
+        </p>
+    </form>
+
+    <noscript>
+        <p>
+            Search needs JavaScript to run in the browser. You can still browse
+            <a href="/sitemap.xml">the sitemap</a> or visit the <a href="/projects/">project library</a>.
+        </p>
+    </noscript>
+
+    <section id="search-results" aria-live="polite" aria-label="Search results"></section>
+</section>
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<script src="/js/search.js" type="module"></script>
