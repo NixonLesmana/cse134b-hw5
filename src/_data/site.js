@@ -1,5 +1,6 @@
 export default {
   title: "Nixon FM",
+  url: "https://nixon-hw5.netlify.app",
   author: "Nixon Lesmana",
   description: "Nixon Lesmana's music library inspired engineering portfolio.",
   tagline: "My engineering projects, organized like a music library.",
